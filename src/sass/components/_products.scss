@@ -1,0 +1,100 @@
+.products__section {
+    background-color: $secondary-bcg-color;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products__card {
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+
+
+    @media screen and (min-width:480px){
+        width: (480px-30px);}
+
+    @media screen and (min-width:768px){
+        width: (768px-30px);}
+
+    @media screen and (min-width:1200px){
+        width: (1200px-30px);}
+}
+
+.products__img-thumb {
+    @extend %flex-centered;
+    width: 75px;
+}
+
+.products__card:nth-child(3n+1) .products__img-thumb{
+    background-color: $accent-color;
+}
+
+.products__card:nth-child(3n+2) .products__img-thumb{
+    background-color: $accent-color-bright;
+}
+
+.products__card:nth-child(3n+3) .products__img-thumb{
+    background-color: $accent-color-add;
+}
+
+.products__thumb {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+
+    // @media screen and (min-width:1200px){
+    //     padding-bottom: 30px;}
+}
+
+.products__button {
+    align-self: flex-end;
+}
+
+.products__card:nth-child(3n+1) .products__button{
+    border: 5px solid $accent-color;
+    &:hover, &:focus {   
+        background-color: $accent-color;
+        }
+}
+
+.products__card:nth-child(3n+2) .products__button{
+    border: 5px solid $accent-color-bright;
+    &:hover, &:focus {   
+        background-color: $accent-color-bright;
+        }
+}
+
+.products__card:nth-child(3n+3) .products__button{
+    border: 5px solid $accent-color-add;
+    &:hover, &:focus {   
+        background-color: $accent-color-add;
+        }
+}
+
+.products__name {
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    text-align: left;
+}
+
+.products__text {
+    color: $secondary-text-color;
+    margin-bottom: 20px;
+}
+
+.products__icon{
+   fill: $primary-text-color;
+}
+

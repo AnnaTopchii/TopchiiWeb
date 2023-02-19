@@ -1,14 +1,275 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бізнес тренер Віталій Топчій</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#3c57a6">
+</head>
+<body>
+    <!--Шапка-->
+    <header class="header">
+        <div class="header__container">
+            <a class="name" href="./index.html">
+                <svg class="header-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-manager-consultant-manager-svgrepo-com"></use></svg>
+                <span>Віталій Топчій</span></a>
+            
+            <button class="btn-menu btn-menu--open js-open-menu" type="button" aria-label="Перемикач мобільного меню" aria-expanded="false">
+                <svg class="btn-menu__icon--open" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_mobile"></use>
+                </svg>
+            </button>
+
+            <nav class="menu-container js-menu-container" id="mobile-menu">
+                
+                <button class="btn-menu btn-menu--close js-close-menu" type="button" aria-label="Перемикач мобільного меню"
+                    aria-expanded="false">
+                    <svg class="btn-menu__icon--close" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close_menu"></use>
+                    </svg>
+                </button>
+                
+                <ul class="site-nav">
+                    <!--<повісити  доп клас посиланню current-->
+                    <li><a class="site-nav__link current" href="./index.html">Головна</a></li>
+                    <li><a class="site-nav__link" href="./about.html">Знайомство</a></li>
+                    <li><a class="site-nav__link" href="./about.html#contacts">Контакти</a></li>
+                    <li><a class="site-nav__link" href="./products-mafia.html">Продукти</a>
+                        <ul class="site-nav__list">
+                            <li><a class="site-nav__products" href="./products-mafia.html">Тренінги</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Бізнес-ігри</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Відео навчання</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Тімбілдинг</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Мотузки</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Закордонні заходи</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Quiz</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Мафія</a></li>
+                            <li><a class="site-nav__products" href="./products-mafia.html">Спортивні заходи</a></li>
+                        </ul>
+                    </li>
+                </ul>
+       </nav>
+    </div>
+    </header>
+
+    <main>
+        <section class="hero">
+        <!-- <div class="hero__thumb">
+            <h1 class="hero__title">Топчій Віталій</h1>
+            <p class="hero__text">Бізнес-тренер, коуч і ще багато чого бла бла бла </p>
+            <button class="button hero__button" type="button" data-modal-open>Залишити заявку</button>
+        </div> -->
+        </section>
+        
+
+        <!--Резюме-->
+        <section class="resume section">
+        <div class="container resume__container">
+                <div class="resume__thumb">
+                    <img class="resume__photo" src="images/mykhailo.jpg" alt="Фото Топчій Віталій">
+                    <!--<img srcset="./images/bio.jpg 1x, ./images/bio@2x.jpg 2x" src="./images/mykhailo.jpg" alt="Фото Топчій Віталій">-->
+                    <p class="resume__text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae, et
+                            voluptatum sed quam ipsam! Est, fugiat voluptatem suscipit exercitationem similique itaque ullam,
+                            dicta dolores et dolor accusamus, vel ducimus. </p>
+                    <table class="resume__list">
+                        <tbody>
+                        <tr>
+                            <td class="subtitle">11</td>
+                            <td>років досвіду бізнес тренером</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitle">8</td>
+                            <td>років досвіду керівником</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitle">3</td>
+                            <td>LMS запустив з нуля</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitle">60+</td>
+                            <td>створених навчальних відео</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitle">35+</td>
+                            <td>тренінгів і вебінарів</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitle">20+</td>
+                            <td>інтерактивних курсів</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitle">15+</td>
+                            <td>проєктів навчання під ключ</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+            <a class="button resume__button" href="./about.html">Познайомимося ближче?</a>
+        </div>
+        </section>
+
+        <!--Чим ми займаємося-->
+        <section class="section products__section" id="products">
+            <div class="container ">
+            <h2 class="title">Заходи</h2>
+            <ul class="products">
+                <li class="products__card">
+                    <div class="products__img-thumb" ><svg class="products__icon" width="45" height="45">
+                        <use href="./images/icons.svg#icon-career-rising-trend-becoming-ceo-svgrepo-com"></use>
+                    </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Тренінги</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                        nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-hair-styles-men-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Бізнес-ігри</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                        nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button  small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="50" height="50">
+                            <use href="./images/icons.svg#icon-collect-call-call-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Відео навчання</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                            nostrum quis vel minima dicta labrum maiores alias!</p>
+                        <a class="button small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-mountain-top-summit-sunrise-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Тімбілдинг</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                            nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-staff-personnel-structure-management-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Мотузки</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                            nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-rocket-innovation-space-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Закордонні заходи</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                        nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button  small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-champagne-glass-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Quiz</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                        nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button  small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-search-key-magnifying-glass-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Мафія</h3>
+                        <p class="products__text">Покращити крос-функціональні зв’язки в команді й при цьому відпочити з пивком? Це
+                            можливо. Гра «Мафія» - ідеальне
+                            рішення.</p>
+                        <a class="button  small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
+                            <use href="./images/icons.svg#icon-website-seo-marketing-hitting-the-bullseye-svgrepo-com"></use>
+                        </svg></div>
+                    <div class="products__thumb">
+                        <h3 class="subtitle products__name">Спортивні заходи</h3>
+                        <p class="products__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam culpa mollitia,
+                        nostrum quis vel minima dicta laborum maiores alias!</p>
+                        <a class="button  small-button products__button" href="./products-mafia.html">Детальніше</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+
+       
+        <!--Партнери-->
+        <section class="section">
+            <div class="container clients__container">
+                <h2 class="title">Нам довіряють</h2>
+                <ul class="clients">
+                    <li class="clients__card">
+                        <img src="./images/icons.svg#icon-linkedin" alt="Логотип компанії-клієнта">
+                    </li>
+                    <li class="clients__card">
+                        <img src="./images/icons.svg#icon-linkedin" alt="Логотип компанії-клієнта">
+                    </li>
+                    <li class="clients__card">
+                        <img src="./images/icons.svg#icon-linkedin" alt="Логотип компанії-клієнта">
+                    </li>
+                    <li class="clients__card">
+                        <img src="./images/icons.svg#icon-linkedin" alt="Логотип компанії-клієнта">
+                    </li>
+                    <li class="clients__card">
+                        <img src="./images/icons.svg#icon-linkedin" alt="Логотип компанії-клієнта">
+                    </li>
+                    <li class="clients__card">
+                        <img src="./images/icons.svg#icon-linkedin" alt="Логотип компанії-клієнта">
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <include src="./partials/footer.html"></include>
+
+</body>
 </html>
+
+
+
+
+
+
+
+

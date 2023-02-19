@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  //margin-top: 60px;
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    max-width: 1600px;
+    background-size: cover;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-position: center;
+    background-image: url(../images/mykhailo.jpg);
+
+   /* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  
+    background-image: url(../images/headers@2x.jpg);
+  } 
+
+    @media screen and (min-width: 481px) {
+    background-image: url(../images/headerm.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  
+    background-image: url(../images/headerm@2x.jpg);
+  } }
+
+  @media screen and (min-width:769px){
+  background-image: url(../images/headerl.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  
+  background-image: url(../images/headerl@2x.jpg);
+  }}*/
+
+  @media screen and (min-width:1200px){
+    padding: 200px 0px;
+    height: 500px;
+  }
+}
+
+// .hero__thumb {
+//   max-width: 50%;
+//   text-align: left;
+//   padding: 0px 15px;
+
+//   @media screen and (min-width:1200px){
+//   max-width: 696px;
+//   }
+// }
+
+// .hero__title {
+//     color: $white;
+//     font-weight: 900;
+//     font-size: 22px;
+//     line-height: 1.62;
+//     text-transform: uppercase;
+//     margin: 0 auto 20px;
+
+//     @media screen and (min-width:768px) {
+//         font-size: 32px;
+//     }
+
+//     @media screen and (min-width:1200px){
+//     font-size: 44px;
+//     line-height: 1.36;
+//     }
+// }
+
+// .hero__text {
+//     color: $secondary-text-color;
+//     font-weight: 500;
+//     font-size: 18px;
+
+//     @media screen and (min-width:768px){
+//     font-size: 24px;}
+
+//     @media screen and (min-width:1200px){
+//     font-size: 30px;}
+// }
+
+// .hero__button {
+//   display: none;
+//     padding: 10px 24px;
+
+//     @media screen and (min-width:1200px){
+//     padding: 10px 32px;
+//     }
+// }

@@ -1,0 +1,113 @@
+.about__photocard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about__photo{
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+
+     @media screen and (min-width:768px) {
+        max-width: 300px;}
+}
+
+.about__description{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-transform: uppercase;
+}
+
+.about__category-container{
+    width: 380px;
+    border: 2px solid $secondary-text-color;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about__icon-container{
+    background-color: $accent-color-add;
+    width: 30px;
+    height: 70px;
+}
+
+.about__icon-container--education{
+    width: 30px;
+    height: 90px;
+    background-color: $accent-color-add;
+}
+
+.about__category-container:nth-child(3n+1) .about__icon-container{
+    background-color: $accent-color;
+}
+
+.about__category-container:nth-child(3n+2) .about__icon-container{
+    background-color: $accent-color-bright;
+}
+
+.about__category-container:nth-child(3n+3) .about__icon-container{
+    background-color: $accent-color-add;
+}
+
+.about__category-title{
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+    color: $primary-text-color;
+}
+
+.about__category-text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 15px;
+}
+
+.about__text-container{
+    max-width: 320px;
+}
+
+.about__company {
+    font-weight: 700;
+}
+
+.about__position{
+    font-weight: 400;
+}
+
+.sertificate-section {
+   background-color: $secondary-bcg-color;
+   padding-top: 20px;
+   padding-bottom: 30px;
+
+    // @media screen and (min-width:1200px) {
+    //     padding-top: 94px;
+    //     padding-bottom: 94px;
+    // }
+}
+
+.about__position--sertificate{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.makr-list{
+    background-color: $accent-color;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $secondary-text-color;
+}
+
+.about-button{
+    max-width: 300px;
+}
+
+
