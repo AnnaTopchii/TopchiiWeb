@@ -196,7 +196,7 @@
 .site-nav__list--desktop{
     display: none;
     position: absolute;
-    top: 55px; 
+    top: 60px; 
     right: -50px;
     z-index: 1;
     
@@ -216,7 +216,7 @@
     font-weight: 700;
     color: $white;
     display: block;
-    padding: 12px;
+    padding: 19px 12px;
     text-transform: uppercase;
 
     transition: color 250ms $animation-timing-function;
