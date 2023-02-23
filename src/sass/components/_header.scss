@@ -13,6 +13,7 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 
     @media screen and (min-width: 360px) {
         width: 360px;}
@@ -25,8 +26,9 @@
     }
 
     @media screen and (min-width:1200px) {
-        width: 1000px;
+        width: 1200px;
         display: flex;
+        padding-right: 50px;
         justify-content: space-between;
     }
 
@@ -34,7 +36,6 @@
 
 
 .menu-container {
-    
     @media screen and (max-width:1199px){
     display: none;
 
@@ -136,11 +137,11 @@
 
 .site-nav__link {
     font-family: 'Unbounded', cursive;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     color: $secondary-text-color;
     display: block;
-    padding: 12px;
+    padding: 8px;
     text-transform: uppercase;
 
     transition: color 250ms $animation-timing-function;
@@ -148,20 +149,30 @@
     &:hover, &:focus{
         color: $accent-color;
     }
+
+    @media screen and (min-width:480px) {
+        font-size: 28px;
+        padding: 12px;
+    }
 }
 
 .site-nav__products{
    font-family: 'Unbounded', cursive;
    display: block;
    text-decoration: none;
-   font-size: 24px;
+   font-size: 20px;
    color: $secondary-text-color;
-   padding: 12px 12px 12px 40px;
+   padding: 6px 10px 6px 30px;
 
     transition: color 250ms $animation-timing-function;
 
     &:hover, &:focus{
         color: $accent-color;
+    }
+
+    @media screen and (min-width:480px) {
+        font-size: 24px;
+        padding: 12px 12px 12px 40px;
     }
 }
 
@@ -172,12 +183,9 @@
 
 // desktop menu
 
-@media screen and (max-width:1200px){
-.site-nav--desktop {
-    display: none;
-}}
-
-@media screen and (min-width:1200px){
+.site-nav__thumb--desktop{
+    position: relative;
+}
 
 .site-nav--desktop {
     display: flex;
@@ -186,19 +194,21 @@
 }
 
 .site-nav__list--desktop{
-    transform: translateY(-115%);
+    display: none;
     position: absolute;
-    z-index: 10;
+    top: 55px; 
+    right: -50px;
+    z-index: 1;
     
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: $secondary-bcg-color;
     padding: 20px 10px;
-
-    transition: transform 250ms $animation-timing-function;
-
-    .products-menu--desktop:hover &, .products-menu--desktop:focus &{
-    transform: translateY(62px);
-    }
 }
+
+.site-nav__thumb--desktop:hover .site-nav__list--desktop, .site-nav__thumb--desktop:focus .site-nav__list--desktop{
+    display: block;
+    }
 
 .site-nav__link--desktop {
     font-family: 'Unbounded', cursive;
@@ -230,4 +240,8 @@ font-family: 'Unbounded', cursive;
         color: $accent-color;
     }
 }
-}
+
+@media screen and (max-width:1199px){
+.site-nav--desktop {
+    display: none;
+}}

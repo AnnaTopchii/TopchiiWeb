@@ -55,7 +55,7 @@
 
     @media screen and (min-width:1200px) {
         flex-direction: row;
-        gap: 100px;
+        justify-content: space-evenly;
     }
 }
 
