@@ -31,8 +31,20 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 315px;
-    padding: 20px 0px;
+    max-width: 250px;
+    padding: 15px 0px;
+
+    @media screen and (min-width:480px){
+        max-width: 400px;
+        padding: 20px 0px;}
+
+    @media screen and (min-width:768px){
+        max-width: 650px;
+        }
+
+    @media screen and (min-width:1200px){
+        max-width: 1050px;
+        }
 }
 
 .product-page__card{
@@ -42,7 +54,7 @@
     border-radius: 3px;
     gap: 20px;
     padding-right: 20px;
-    width: 385px;
+    width: 330px;
 
 
     @media screen and (min-width:480px){
@@ -58,6 +70,9 @@
 .product-page__color-line{
     width: 30px;
     background-color: $accent-color;
+
+    @media screen and (min-width:1200px){
+        width: 60px;}
 }
 
 .product-page__description--container{
@@ -74,6 +89,19 @@
     text-align: left;
     padding: 60px 15px;
     color: $secondary-text-color;
+    width: 330px;
+
+    @media screen and (min-width:480px){
+    width: 400px;
+    }
+
+    @media screen and (min-width:768px){
+    width: 500px;
+    }
+
+    @media screen and (min-width:1200px){
+    width: 700px;
+    }
 }
 
 .product-page__price--title{
@@ -85,11 +113,28 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    gap: 10px;
+
+    @media screen and (min-width:480px){
+    gap: 40px;
+    }
+
+    @media screen and (min-width:1200px){
+    gap: 100px;
+    }
 }
 
 .product-page__table-included{
    text-align: left;
    width: 200px;
+
+    @media screen and (min-width:768px){
+    width: 400px;
+    }
+
+    @media screen and (min-width:1200px){
+    width: 500px;
+    }
 }
 
 .product-page__table-price{
@@ -99,6 +144,11 @@
 
 .product-page__number{
     text-transform: lowercase;
+    width: 130px;
+
+    @media screen and (min-width:768px){
+    width: 300px;;
+    }
 }
 
 .product-page__gallery {

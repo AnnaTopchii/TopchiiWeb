@@ -27,6 +27,9 @@ img {
     margin-right: auto;
     min-width: 320px;
 
+    @media screen and (min-width: 360px) {
+        width: 360px;}
+
     @media screen and (min-width: 480px) {
         width: 480px;}
 
@@ -41,10 +44,6 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width:1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
 }
 
 body{
@@ -106,6 +105,9 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     min-width: 320px;
+
+    @media screen and (min-width: 360px) {
+        width: 360px;}
 
     @media screen and (min-width: 480px) {
         width: 480px;}

@@ -62,6 +62,26 @@
                     </li>
                 </ul>
        </nav>
+
+    <ul class="site-nav--desktop">
+        <!--<повісити  доп клас посиланню current-->
+        <li><a class="site-nav__link--desktop" href="./about.html">Знайомство</a></li>
+        <li><a class="site-nav__link--desktop" href="./about.html#contacts">Контакти</a></li>
+        <li><a class="site-nav__link--desktop products-menu--desktop" href="./products-mafia.html">Продукти</a>
+            <ul class="site-nav__list--desktop">
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Тренінги</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Бізнес-ігри</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Відео навчання</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Тімбілдинг</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Мотузки</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Закордонні заходи</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Quiz</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Мафія</a></li>
+                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Спортивні заходи</a></li>
+            </ul>
+        </li>
+    </ul>
+    
     </div>
     </header>
 
@@ -79,11 +99,14 @@
         <section class="resume section">
         <div class="container resume__container">
                 <div class="resume__thumb">
-                    <img class="resume__photo" src="images/mykhailo.jpg" alt="Фото Топчій Віталій">
+                <div class="resume__thumb_inside">
+                    <img class="resume__photo" src="images/my-photos-img/avatar2.jpg" alt="Фото Топчій Віталій">
                     <!--<img srcset="./images/bio.jpg 1x, ./images/bio@2x.jpg 2x" src="./images/mykhailo.jpg" alt="Фото Топчій Віталій">-->
+                    
                     <p class="resume__text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae, et
                             voluptatum sed quam ipsam! Est, fugiat voluptatem suscipit exercitationem similique itaque ullam,
                             dicta dolores et dolor accusamus, vel ducimus. </p>
+                </div>
                     <table class="resume__list">
                         <tbody>
                         <tr>
@@ -116,7 +139,8 @@
                         </tr>
                         </tbody>
                     </table>
-                </div>
+                    </div>
+                
             </a>
             <a class="button resume__button" href="./about.html">Познайомимося ближче?</a>
         </div>
