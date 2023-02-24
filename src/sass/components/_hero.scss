@@ -1,11 +1,12 @@
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   //margin-top: 60px;
     text-align: center;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 150px;
     max-width: 1600px;
     background-size: cover;
     margin-top: 60px;
@@ -13,7 +14,7 @@
     margin-right: auto;
     padding: 15px;
     background-position: center;
-    background-image: url(/src/images/small\ Black\ &\ Gray\ Minimalist\ Profile\ LinkedIn\ Banner\ \(3\).png);
+    background-image: url(/src/images/bg.png);
 
    /* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   
@@ -37,16 +38,37 @@
   }}*/
 
    @media screen and (min-width:768px){
-    background-image: url(/src/images/Black\ &\ Gray\ Minimalist\ Profile\ LinkedIn\ Banner\ \(3\).png);
     padding: 0px 0px;
-    height: 250px;
+    height: 200px;
   }
 
   @media screen and (min-width:1200px){
-    background-image: url(/src/images/big\ Black\ &\ Gray\ Minimalist\ Profile\ LinkedIn\ Banner\ \(3\).png);
     padding: 0px 0px;
     height: 300px;
   }
+}
+
+.resume__photo {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 50%;
+    max-width: 250px;
+    height: auto;
+    
+
+    @media screen and (min-width:768px) {
+      top: 20%;
+      right: 7%;
+      max-width: 280px;
+      transform: none;}
+
+    @media screen and (min-width:1200px) {
+      top: 25%;
+      right: 10%;
+      max-width: 350px;}
 }
 
 // .hero__thumb {

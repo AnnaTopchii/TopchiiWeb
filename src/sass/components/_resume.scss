@@ -1,3 +1,15 @@
+.resume{
+    padding-top: 180px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 120px;
+        }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 90px;
+        }   
+}
+
 .resume__container{
     display: flex;
     flex-direction: column;
@@ -15,38 +27,41 @@
     margin-bottom: 30px;
 
     @media screen and (min-width:768px) {
-        //flex-direction: row;
-        //align-self: flex-start;
-        }
-}
-
-.resume__thumb_inside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-    @media screen and (min-width:768px) {
         flex-direction: row-reverse;
+        align-items: flex-end;
         }
 }
 
-.resume__photo {
-    border-radius: 50%;
-    max-width: 200px;
-    height: auto;
+// .resume__thumb_inside{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 30px;
 
-     @media screen and (min-width:768px) {
-        max-width: 300px;}
-}
+//     @media screen and (min-width:768px) {
+//         flex-direction: row-reverse;
+//         }
+// }
 
 .resume__text{
     line-height: 1.5;
+
+    @media screen and (min-width:768px) {
+    width: 318px;}
+
+    @media screen and (min-width:1200px) {
+    width: 500px;}
 }
    
 .resume__list{
     text-transform: uppercase;
+
+    @media screen and (min-width:768px) {
+    width: 380px;}
+
+    @media screen and (min-width:1200px) {
+    width: 500px;}
 }
 
 .resume__list .subtitle{
@@ -61,8 +76,5 @@
 }
 
 .resume__button {
-    align-self: flex-end;
-
-     @media screen and (min-width:768px) {
-        align-self: center;}
+    align-self: center;
 }
