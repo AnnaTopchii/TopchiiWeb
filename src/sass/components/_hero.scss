@@ -14,7 +14,7 @@
     margin-right: auto;
     padding: 15px;
     background-position: center;
-    background-image: url(/src/images/bg.png);
+    background-image: url(/src/images/bg.jpg);
 
    /* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   
@@ -69,6 +69,10 @@
       top: 25%;
       right: 10%;
       max-width: 350px;}
+}
+
+.scale-up-center {
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 // .hero__thumb {
