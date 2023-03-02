@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
     <script type="module" src="./index.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
@@ -158,9 +159,34 @@
 
 <!-- Photogallery -->
     
-        <div class="container">
+        <!-- <div class="container">
             <div class="product-page__gallery">### Тут буде фотогалерея ###</div>
-        </div>
+        </div> -->
+
+
+        <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+            <div class="splide__track container">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(1).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(2).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(3).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(4).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(5).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(6).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                    <li class="splide__slide"><img src="./images/mafia-img/mafia(7).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+                </ul>
+            </div>
+        </section>
+
+        <ul id="thumbnails" class="thumbnails">
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(1).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(2).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(3).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(4).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(5).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(6).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+            <li class="thumbnail"><img src="./images/mafia-img/mafia(7).jpg" alt="Фото з гри Мафія" loading="lazy"></li>
+        </ul>
     
 <!-- Button -->
         <div class="small-button-thumb">
