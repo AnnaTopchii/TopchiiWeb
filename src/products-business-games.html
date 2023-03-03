@@ -10,6 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- Add this if you have a photogallery on the page -->
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
     <script type="module" src="./index.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
@@ -148,18 +150,16 @@
             </div>
         </section>
 
-<!-- Photogallery
+<!-- Photogallery -->
     
-        <div class="container">
-            <div class="product-page__gallery">### Тут буде фотогалерея ###</div>
-        </div> -->
+        
     
 <!-- Product card -->
-<section class="product-page__description--section">
+<section class="product-page__description--section--blue">
     <div class="container product-page__description--container">
         <h2 class="title">Піратський кодекс</h2>
         <img class="products-business-games__main-image slide-tr"
-            src="./images/business-game-img/business-game-main.jpg" alt="Групове фото з гри Інки" loading="lazy">
+            src="./images/my-photos-img/pirates.jpg" alt="Групове фото з гри Пірати" loading="lazy">
 
         <div class="product-page__card">
             <div class="product-page__color-line"></div>
@@ -202,9 +202,47 @@
 
 <!-- Photogallery -->
 
-<div class="container">
-    <div class="product-page__gallery">### Тут буде фотогалерея ###</div>
-</div>
+<section id="main-carousel" class="splide gallery__container" aria-label="My Awesome Gallery">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(1).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(2).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(3).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(4).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(5).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(6).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(7).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+            <li class="splide__slide"><img src="./images/business-game-img/business-game(8).jpg" alt="Фото з гри" loading="lazy">
+            </li>
+        </ul>
+    </div>
+</section>
+
+<ul id="thumbnails" class="thumbnails">
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(1).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(2).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(3).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(4).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(5).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(6).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(7).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+    <li class="thumbnail"><img src="./images/business-game-img/business-game(8).jpg" alt="Фото з гри" loading="lazy">
+    </li>
+</ul>
 
 <!-- Button -->
         <div class="small-button-thumb">

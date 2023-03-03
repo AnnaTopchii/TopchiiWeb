@@ -1,0 +1,95 @@
+.gallery__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 360px) {
+        width: 360px;}
+
+    @media screen and (min-width: 480px) {
+        width: 480px;}
+
+    @media screen and (min-width:768px) {
+        width: 768px;}
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;}
+}
+
+.splide__track {
+    height: 250px;
+    width: 350px;
+
+    @media screen and (min-width:480px){
+        height: 300px;
+        width: 450px;
+    }
+
+    @media screen and (min-width:768px){
+        height: 400px;
+        width: 600px;
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 500px;
+        width: 750px;
+    }
+}
+
+.splide__slide{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.splide__track img {
+   height: 100%;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  max-width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  opacity: 0.3;
+
+  @media screen and (min-width:480px){
+        max-width: 70px;
+        height: 70px;
+    }
+
+    @media screen and (min-width:768px){
+        max-width: 100px;
+        height: 80px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 120px;
+        height: 100px;
+    }
+}
+
+.thumbnail img {
+  width: auto;
+  height: 100%;
+  object-fit:cover;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}

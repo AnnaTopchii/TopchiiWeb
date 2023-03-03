@@ -35,6 +35,16 @@
 
 }
 
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .menu-container {
     @media screen and (max-width:1199px){
@@ -50,6 +60,8 @@
         top: 0;
         background-color: $secondary-bcg-color;
         padding: 80px 30px;
+        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        overflow: scroll;
 
         @media screen and (min-width:768px){
         padding: 80px 150px;
@@ -148,7 +160,7 @@
     transition: color 250ms $animation-timing-function;
 
     &:hover, &:focus{
-        color: $accent-color;
+        color: $accent-color-add;
     }
 
     @media screen and (min-width:480px) {
@@ -168,7 +180,7 @@
     transition: color 250ms $animation-timing-function;
 
     &:hover, &:focus{
-        color: $accent-color;
+        color: $accent-color-add;
     }
 
     @media screen and (min-width:480px) {
@@ -183,6 +195,19 @@
 
 
 // desktop menu
+
+@keyframes scale-in-top {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
 
 .site-nav__thumb--desktop{
     position: relative;
@@ -205,6 +230,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: $secondary-bcg-color;
     padding: 20px 10px;
+    animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .site-nav__thumb--desktop:hover .site-nav__list--desktop, .site-nav__thumb--desktop:focus .site-nav__list--desktop{
@@ -238,7 +264,7 @@ font-family: 'Unbounded', cursive;
     transition: color 250ms $animation-timing-function;
 
     &:hover, &:focus{
-        color: $accent-color;
+        color: $accent-color-add;
     }
 }
 

@@ -104,6 +104,10 @@
     background-color: rgba(157, 104, 160, 0.6);
 }
 
+.product-page__description--section--blue{
+    background-color: rgba(124, 159, 213, 0.6);
+}
+
 .product-page__description--container{  
     padding-top: 60px;
     padding-bottom: 60px;
@@ -147,7 +151,7 @@
     }
 
     @media screen and (min-width:1200px){
-    gap: 70px;
+    gap: 50px;
     }
 }
 
@@ -160,11 +164,11 @@
     }
 
     @media screen and (min-width:768px){
-    width: 275px;
+    width: 310px;
     }
 
     @media screen and (min-width:1200px){
-    width: 300px;
+    width: 340px;
     }
 }
 
@@ -182,12 +186,12 @@
     }
 
     @media screen and (min-width:768px){
-    width: 275px;
+    width: 240px;
     gap: 10px;
     }
 
     @media screen and (min-width:1200px){
-    width: 300px;
+    width: 280px;
     }
 }
 
@@ -227,67 +231,36 @@
     align-self: center;
 }
 
-// Gallery
+.trainings-nav {
+    margin-top: 30px;
+}
 
-.splide__track {
-    max-height: 250px;
-
-    @media screen and (min-width:480px){
-        max-height: 300px;
-    }
+.trainings-nav ul{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
 
     @media screen and (min-width:768px){
-        max-height: 500px;
-    }
-
-    @media screen and (min-width:1200px) {
-        max-height: 700px;
+        flex-direction: row;
     }
 }
 
-.splide__track img {
-   width: auto;
-   object-fit: contain;
-}
+.trainings-button {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: $white;
+    color: $primary-text-color;
+    border: 5px solid $accent-color-bright;
+    width: 330px;
 
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
-}
-
-.thumbnail {
-  max-width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
-  opacity: 0.3;
-
-  @media screen and (min-width:480px){
-        max-width: 70px;
-        height: 70px;
-    }
+    &:hover, &:focus {   
+        color: $white;
+        background-color: $accent-color-bright;
+        }
 
     @media screen and (min-width:768px){
-        max-width: 100px;
-        height: 80px;
+        width: auto;
     }
-
-    @media screen and (min-width:1200px) {
-        max-width: 120px;
-        height: 100px;
-    }
-}
-
-.thumbnail img {
-  width: auto;
-  height: 100%;
-  object-fit:cover;
-}
-
-.thumbnail.is-active {
-  opacity: 1;
 }
