@@ -20,71 +20,8 @@
 </head>
 <body>
     <!--Шапка-->
-    <header class="header">
-        <div class="header__container">
-            <a class="name" href="./index.html">
-                <svg class="header-icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-manager-consultant-manager-svgrepo-com"></use></svg>
-                <span>Віталій Топчій</span></a>
-            
-            <button class="btn-menu btn-menu--open js-open-menu" type="button" aria-label="Перемикач мобільного меню" aria-expanded="false">
-                <svg class="btn-menu__icon--open" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu_mobile"></use>
-                </svg>
-            </button>
+    <include src="./partials/header.html"></include>
 
-    <ul class="site-nav--desktop">
-        <!--<повісити  доп клас посиланню current-->
-        <li><a class="site-nav__link--desktop" href="./about.html">Знайомство</a></li>
-        <li class="site-nav__thumb--desktop"><a class="site-nav__link--desktop products-menu--desktop" href="./index.html#products">Продукти</a>
-            <ul class="site-nav__list--desktop">
-                <li><a class="site-nav__products--desktop" href="./products-trainings.html">Тренінги</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-business-games.html">Бізнес-ігри</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-video.html">Відео навчання</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-teambuilding.html">Тімбілдинг</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-ropes.html">Мотузки</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-abroad.html">Закордонні заходи</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-quiz.html">Quiz</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-mafia.html">Мафія</a></li>
-                <li><a class="site-nav__products--desktop" href="./products-sports.html">Спортивні заходи</a></li>
-            </ul>
-        </li>
-        <li><a class="site-nav__link--desktop" href="./index.html#contacts">Контакти</a></li>
-    </ul>
-    </div>
-
-<!-- Burger menu -->
-<nav class="menu-container js-menu-container" id="mobile-menu">
-
-    <button class="btn-menu btn-menu--close js-close-menu" type="button" aria-label="Перемикач мобільного меню"
-        aria-expanded="false">
-        <svg class="btn-menu__icon--close" width="40" height="40">
-            <use href="./images/icons.svg#icon-close_menu"></use>
-        </svg>
-    </button>
-
-    <ul class="site-nav">
-        <!--<повісити  доп клас посиланню current-->
-        <li><a class="site-nav__link current" href="./index.html">Головна</a></li>
-        <li><a class="site-nav__link" href="./about.html">Знайомство</a></li>
-        <li><a class="site-nav__link" href="./about.html#contacts">Контакти</a></li>
-        <li><a class="site-nav__link" href="./products-trainings.html">Продукти</a>
-            <ul class="site-nav__list">
-                <li><a class="site-nav__products" href="./products-trainings.html">Тренінги</a></li>
-                <li><a class="site-nav__products" href="./products-business-games.html">Бізнес-ігри</a></li>
-                <li><a class="site-nav__products" href="./products-video.html">Відео навчання</a></li>
-                <li><a class="site-nav__products" href="./products-teambuilding.html">Тімбілдинг</a></li>
-                <li><a class="site-nav__products" href="./products-ropes.html">Мотузки</a></li>
-                <li><a class="site-nav__products" href="./products-abroad.html">Закордонні заходи</a></li>
-                <li><a class="site-nav__products" href="./products-quiz.html">Quiz</a></li>
-                <li><a class="site-nav__products" href="./products-mafia.html">Мафія</a></li>
-                <li><a class="site-nav__products" href="./products-sports.html">Спортивні заходи</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-    </header>
 
     <main>
         <section class="hero">
@@ -203,7 +140,7 @@
                         <a class="button small-button products__button" href="./products-ropes.html">Детальніше</a>
                     </div>
                 </li>
-                <li class="products__card">
+                <!-- <li class="products__card">
                     <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
                             <use href="./images/icons.svg#icon-rocket-innovation-space-svgrepo-com"></use>
                         </svg></div>
@@ -213,7 +150,7 @@
                         nostrum quis vel minima dicta laborum maiores alias!</p>
                         <a class="button  small-button products__button" href="./products-abroad.html">Детальніше</a>
                     </div>
-                </li>
+                </li> -->
                 <li class="products__card">
                     <div class="products__img-thumb"><svg class="products__icon" width="45" height="45">
                             <use href="./images/icons.svg#icon-champagne-glass-svgrepo-com"></use>

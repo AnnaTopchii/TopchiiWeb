@@ -25,76 +25,8 @@
 
 <body>
         <!--Шапка-->
-        <header class="header">
-            <div class="header__container">
-                <a class="name" href="./index.html">
-                    <svg class="header-icon" width="40" height="40">
-                        <use href="./images/icons.svg#icon-manager-consultant-manager-svgrepo-com"></use>
-                    </svg>
-                    <span>Віталій Топчій</span></a>
+        <include src="./partials/header.html"></include>
         
-                <button class="btn-menu btn-menu--open js-open-menu" type="button" aria-label="Перемикач мобільного меню"
-                    aria-expanded="false">
-                    <svg class="btn-menu__icon--open" width="40" height="40">
-                        <use href="./images/icons.svg#icon-menu_mobile"></use>
-                    </svg>
-                </button>
-        
-                <ul class="site-nav--desktop">
-                    <!--<повісити  доп клас посиланню current-->
-                    <li><a class="site-nav__link--desktop" href="./about.html">Знайомство</a></li>
-                    <li class="site-nav__thumb--desktop"><a class="site-nav__link--desktop products-menu--desktop"
-                            href="./index.html#products">Продукти</a>
-                        <ul class="site-nav__list--desktop">
-                            <li><a class="site-nav__products--desktop" href="./products-trainings.html">Тренінги</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-business-games.html">Бізнес-ігри</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-video.html">Відео навчання</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-teambuilding.html">Тімбілдинг</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-ropes.html">Мотузки</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-abroad.html">Закордонні заходи</a></li>
-                            <li><a class="site-nav__products--desktop current" href="./products-quiz.html">Quiz</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-mafia.html">Мафія</a></li>
-                            <li><a class="site-nav__products--desktop" href="./products-sports.html">Спортивні заходи</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="site-nav__link--desktop" href="./index.html#contacts">Контакти</a></li>
-                </ul>
-            </div>
-        
-            <!-- Burger menu -->
-            <nav class="menu-container js-menu-container" id="mobile-menu">
-        
-                <button class="btn-menu btn-menu--close js-close-menu" type="button" aria-label="Перемикач мобільного меню"
-                    aria-expanded="false">
-                    <svg class="btn-menu__icon--close" width="40" height="40">
-                        <use href="./images/icons.svg#icon-close_menu"></use>
-                    </svg>
-                </button>
-        
-                <ul class="site-nav">
-                    <!--<повісити  доп клас посиланню current-->
-                    <li><a class="site-nav__link" href="./index.html">Головна</a></li>
-                    <li><a class="site-nav__link" href="./about.html">Знайомство</a></li>
-                    <li><a class="site-nav__link" href="./index.html#contacts">Контакти</a></li>
-                    <li><a class="site-nav__link" href="./products-trainings.html">Продукти</a>
-                        <ul class="site-nav__list">
-                            <li><a class="site-nav__products" href="./products-trainings.html">Тренінги</a></li>
-                            <li><a class="site-nav__products" href="./products-business-games.html">Бізнес-ігри</a></li>
-                            <li><a class="site-nav__products" href="./products-video.html">Відео навчання</a></li>
-                            <li><a class="site-nav__products" href="./products-teambuilding.html">Тімбілдинг</a></li>
-                            <li><a class="site-nav__products" href="./products-ropes.html">Мотузки</a></li>
-                            <li><a class="site-nav__products" href="./products-abroad.html">Закордонні заходи</a></li>
-                            <li><a class="site-nav__products current" href="./products-quiz.html">Quiz</a></li>
-                            <li><a class="site-nav__products" href="./products-mafia.html">Мафія</a></li>
-                            <li><a class="site-nav__products" href="./products-sports.html">Спортивні заходи</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        
-        </header>
-
-
     <main>
         <section class="product-page section">
         <div class="container">
@@ -118,7 +50,7 @@
                         без обмежень
                     </li>
                     <li class="product-page__item"><b>Кількість учасників:</b>
-                        від 10 учасників
+                        від 10 осіб
                     </li>
                     <li class="product-page__item"><b>Тривалість заходу:</b>
                         3 години
