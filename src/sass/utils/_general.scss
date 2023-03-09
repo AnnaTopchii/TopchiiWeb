@@ -104,7 +104,7 @@ body{
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin: 60px auto;
+    margin: 60px auto 60px;
     padding-left: 15px;
     padding-right: 15px;
     min-width: 320px;
@@ -120,6 +120,10 @@ body{
 
     @media screen and (min-width:1200px) {
         width: 1200px;}
+}
+
+.small-button-thumb--no-margin-top {
+    margin-top: 0;
 }
 
 .title {
