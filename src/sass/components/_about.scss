@@ -74,19 +74,25 @@
         width: 738px;}
 
     @media screen and (min-width:1200px) {
-        width: 500px;}    
+        width: 550px;}    
 }
 
 .about__icon-container{
     background-color: $accent-color-add;
     width: 30px;
-    height: 70px;
+    height: 80px;
+
+    @media screen and (min-width:1200px) {
+        height: 90px;}    
 }
 
 .about__icon-container--education{
     width: 30px;
-    height: 90px;
+    height: 80px;
     background-color: $accent-color-add;
+
+    @media screen and (min-width:1200px) {
+        height: 90px;} 
 }
 
 .about__category-container:nth-child(3n+1) .about__icon-container{

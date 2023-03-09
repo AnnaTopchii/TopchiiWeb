@@ -208,7 +208,59 @@ formModal.addEventListener("submit", function(event) {
   }
 });
 
+// To top button
+
+const toTopBtn = document.querySelector('.to-top');
+
+toTopBtn.addEventListener('click', onTopScroll);
+window.addEventListener('scroll', onScrollToTopBtn);
+
+function onScrollToTopBtn() {
+    const offsetTrigger = 100;
+    const pageOffset = window.pageYOffset;
+  
+    pageOffset > offsetTrigger
+      ? toTopBtn.classList.remove('is-hidden')
+      : toTopBtn.classList.add('is-hidden');
+}
+  
+function onTopScroll() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+}
 
 
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var stopAnimation = function(el) {
+//     if (window.requestAnimationFrame) {
+//       window.cancelAnimationFrame(el.__animId);
+//     } else {
+//       clearTimeout(el.__animId);
+//     }
+//   };
+
+//   var button = document.querySelector("#scroll-top > button");
+//   button.addEventListener("click", function(e) {
+//     var body = document.querySelector("html, body");
+//     stopAnimation(body); // Stop any ongoing animation on the body element
+//     var start = body.scrollTop || window.pageYOffset || document.documentElement.scrollTop;
+//     var end = 0;
+//     var currentTime = 0;
+//     var duration = 500;
+//     var easing = function(t) { return t<0.5 ? 2*t*t : -1+(4-2*t)*t; }; // easeInOutQuad
+//     var animateScroll = function() {
+//       currentTime += 1;
+//       var position = easing(currentTime/duration) * (end - start) + start;
+//       body.scrollTop = position;
+//       if (currentTime < duration) {
+//         setTimeout(animateScroll, 1);
+//       }
+//     };
+//     animateScroll();
+//   });
+// });
 
 
