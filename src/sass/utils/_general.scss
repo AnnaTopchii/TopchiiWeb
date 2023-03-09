@@ -100,7 +100,10 @@ body{
 
 .small-button-thumb{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
     margin: 60px auto;
     padding-left: 15px;
     padding-right: 15px;

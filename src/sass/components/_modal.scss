@@ -1,5 +1,10 @@
 .openmodal__button {
-    background-color: $accent-color-add;
+    background-color: $accent-color-bright;
+
+    &:hover, &:focus {     
+        background-color: $secondary-text-color;
+        }
+
 }
 
 .backdrop {
@@ -124,6 +129,10 @@
         }
 }
 
+.modal__row:invalid{
+    border-color: red;
+}
+
 .modal__icon {
     position: absolute;
     left: 12px;
@@ -196,6 +205,13 @@
 }
 }
 
+.modal__button:disabled {
+    color: $white;
+    border: 5px solid $accent-color-bright;
+    background-color: $accent-color-bright;
+    opacity: 0.5;
+}
+
 .modal__button {
     width: 200px;
     height: 50px;
@@ -211,3 +227,4 @@
         border: 5px solid $accent-color-bright;
         }
 }
+
