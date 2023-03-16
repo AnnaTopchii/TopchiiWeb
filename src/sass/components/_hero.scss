@@ -4,75 +4,55 @@
   align-items: center;
   justify-content: flex-end;
   //margin-top: 60px;
-    text-align: center;
-    background-repeat: no-repeat;
-    height: 150px;
-    max-width: 1600px;
-    background-size: cover;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    background-position: center;
-    background-image: url(/src/images/bg.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  max-width: 1600px;
+  background-size: cover;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background-position: center;
+  background-image: url(/src/images/bg.jpg);
 
-   /* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  
-    background-image: url(../images/headers@2x.jpg);
-  } 
-
-    @media screen and (min-width: 481px) {
-    background-image: url(../images/headerm.jpg);
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  
-    background-image: url(../images/headerm@2x.jpg);
-  } }
-
-  @media screen and (min-width:769px){
-  background-image: url(../images/headerl.jpg);
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  
-  background-image: url(../images/headerl@2x.jpg);
-  }}*/
-
-   @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     padding: 0px 0px;
     height: 200px;
   }
 
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     padding: 0px 0px;
     height: 300px;
   }
 }
 
 .resume__photo {
-    position: absolute;
-    z-index: 1;
-    top: 30%;
-    right: 50%;
-    transform: translateX(50%);
-    border-radius: 50%;
-    max-width: 250px;
-    height: auto;
-    
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 50%;
+  max-width: 250px;
+  height: auto;
 
-    @media screen and (min-width:768px) {
-      top: 20%;
-      right: 7%;
-      max-width: 280px;
-      transform: none;}
+  @media screen and (min-width: 768px) {
+    top: 20%;
+    right: 7%;
+    max-width: 280px;
+    transform: none;
+  }
 
-    @media screen and (min-width:1200px) {
-      top: 25%;
-      right: 10%;
-      max-width: 350px;}
+  @media screen and (min-width: 1200px) {
+    top: 25%;
+    right: 10%;
+    max-width: 350px;
+  }
 }
 
 .scale-up-center {
-	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 // .hero__thumb {
